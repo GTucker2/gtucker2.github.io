@@ -87,7 +87,7 @@ table {
 /* ----------
  * Typography
  * ---------- */
-h1, h3, h4, h5, p {
+h1, h3, h4, h5, p{
 	margin-bottom: 22px;
 }
 
@@ -102,6 +102,11 @@ h1, h3, h4, h5, p {
 .nav-header {
 	padding: 10px 30px;
 }
+.nav-header a {	
+	text-decoration: none;
+	font-size: 22px;
+	color: #648880;
+}
 
 /* ----
  * Head
@@ -109,8 +114,16 @@ h1, h3, h4, h5, p {
 .header-body {
 	margin-bottom: 22px;
 	border: 1px solid #dfe2e5;
+	text-align: center;
+	font-family: monospace;
+	font-variant: small-caps;
 }
 .title {
+	font-size: 50px;
 	border-top: 4px solid #648880;
 	padding: 40px 0 0 0;
+}
+.title a {
+	color: #648880;
+	text-decoration: none;
 }
