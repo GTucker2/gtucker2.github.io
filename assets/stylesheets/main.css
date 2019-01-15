@@ -68,6 +68,22 @@ table {
 	display: none;
 }
 
+/* --------
+ * Clearfix 
+ * -------- */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
 /* ----------
  * Typography
  * ---------- */
@@ -84,13 +100,17 @@ h1, h3, h4, h5, p {
 	margin: 0;
 }
 .nav-header {
-	border: 1px solid #dfe2e5;
 	padding: 10px 30px;
 }
 
 /* ----
- * Home 
+ * Head
  * ---- */
 .header-body {
 	margin-bottom: 22px;
+	border: 1px solid #dfe2e5;
+}
+.title {
+	border-top: 4px solid #648880;
+	padding: 40px 0 0 0;
 }
