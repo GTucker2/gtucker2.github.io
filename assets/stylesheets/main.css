@@ -59,9 +59,9 @@ html {
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 .container {
 	margin: 0 auto;
@@ -102,9 +102,11 @@ body {
 	background-color: var(--palette-1);
 	position: relative;
 	min-height: 100%;
+	padding-bottom: 6rem;
 }
 .index-body {
 	margin: 44px 0;
+	margin: 0 110px;
 }
 
 /* ----------
@@ -115,7 +117,7 @@ h1, h2, h3, h4, h5, p{
 	margin-bottom: 22px;
 	color: var(--palette-5);
 }
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection {
+*::selection{
 	background: var(--palette-6);
 	color: var(--palette-1);
 }
@@ -127,6 +129,9 @@ h2 {
 	font-size: 1.5em;
 	color: var(--palette-3);
 	margin-bottom: 11px;
+}
+h2 a {
+	color: var(--palette-2);
 }
 p a {
 	color: var(--palette-2);
@@ -146,12 +151,17 @@ p {
 }
 .nav-header {
 	padding: 10px 30px;
+	margin-bottom: 22px;
 }
 .nav-header a {	
-	padding: 0 22px;
+	padding: 0 44px;
 	text-decoration: none;
 	font-size: 22px;
 	color: var(--palette-2);
+}
+.nav-header a.selected {
+	color: var(--palette-3);
+	font-weight: bold;
 }
 
 /* ----
@@ -160,17 +170,14 @@ p {
  /*.index-header{
 	vertical-align: center;
  }*/
- header.container {
-	border-top: 4px solid var(--palette-3);
-	border-bottom: 4px solid var(--palette-3);
-	margin: 22px 0;
-	width: 100%;
- }
 .header-body {
+	margin-left: 110px;
+	margin-right: 110px;
+	margin-top: 22px;
 	margin-bottom: 22px;
 	text-align: center;
 	font-family: monospace;
-	font-variant: small-caps;
+	border-bottom: 2px solid var(--palette-3);
 }
 .title {
 	font-size: 50px;
@@ -186,15 +193,18 @@ p {
  * Foot
  * ---- */
  footer {
+	padding-top: 22px;
 	background-color: var(--palette-3);
 	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
 	border-bottom: 8px solid var(--palette-2);
  }
  .credits {
 	float: right;
+	color: var(--palette-1);
+	line-height: 15px;
  }
  .nav-footer {
 	float: left;
