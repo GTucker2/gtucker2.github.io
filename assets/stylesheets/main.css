@@ -96,10 +96,15 @@ body {
 	--palette-2: #e4861a;
 	--palette-3: #bd400f;
 	--palette-4: #bd400f;
-	--palette-5: ;
+	--palette-5: #802603;
+	--palette-6: #1d9e5eee;
+	--palette-7: #00a5377c;
 	background-color: var(--palette-1);
 	position: relative;
 	min-height: 100%;
+}
+.index-body {
+	margin: 44px 0;
 }
 
 /* ----------
@@ -108,9 +113,27 @@ body {
 h1, h2, h3, h4, h5, p{
 	font-family: monospace;
 	margin-bottom: 22px;
+	color: var(--palette-5);
+}
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection {
+	background: var(--palette-6);
+	color: var(--palette-1);
+}
+a::selection {
+	background: var(--palette-7);
+	color: var(--palette-1);
 }
 h2 {
+	font-size: 1.5em;
+	color: var(--palette-3);
 	margin-bottom: 11px;
+}
+p a {
+	color: var(--palette-2);
+}
+p {
+	font-size: 1.1em;
+	line-height: 22px;
 }
 
 /* ----
