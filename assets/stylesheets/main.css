@@ -51,12 +51,17 @@ table {
  * Grid 
  * ---- */
 
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 .container {
 	margin: 0 auto;
@@ -93,6 +98,8 @@ body {
 	--palette-4: #bd400f;
 	--palette-5: ;
 	background-color: var(--palette-1);
+	position: relative;
+	min-height: 100%;
 }
 
 /* ----------
@@ -101,6 +108,9 @@ body {
 h1, h2, h3, h4, h5, p{
 	font-family: monospace;
 	margin-bottom: 22px;
+}
+h2 {
+	margin-bottom: 11px;
 }
 
 /* ----
