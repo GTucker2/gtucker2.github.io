@@ -159,7 +159,7 @@ p {
 	font-size: 22px;
 	color: var(--palette-2);
 }
-.nav-header a.selected {
+ a.selected {
 	color: var(--palette-3);
 	font-weight: bold;
 }
@@ -205,6 +205,18 @@ p {
 	float: right;
 	color: var(--palette-1);
 	line-height: 15px;
+ }
+ .language {
+	float: left;
+	line-height: 15px;
+ }
+ .language a {
+	color: var(--palette-1);
+	text-decoration: none;
+ }
+ .language a.selected {
+	font-weight: normal;
+	text-decoration: underline;
  }
  .nav-footer {
 	float: left;
