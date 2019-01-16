@@ -62,7 +62,6 @@ table {
 	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
-	width: 960px;
 }
 .hide {
 	display: none;
@@ -84,10 +83,23 @@ table {
 	*zoom: 1;
 }
 
+/* ----
+ * Body
+ * ---- */
+body {
+	--palette-1: rgb(255, 218, 184);
+	--palette-2: #e4861a;
+	--palette-3: #bd400f;
+	--palette-4: #bd400f;
+	--palette-5: ;
+	background-color: var(--palette-1);
+}
+
 /* ----------
  * Typography
  * ---------- */
-h1, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p{
+	font-family: monospace;
 	margin-bottom: 22px;
 }
 
@@ -103,27 +115,54 @@ h1, h3, h4, h5, p{
 	padding: 10px 30px;
 }
 .nav-header a {	
+	padding: 0 22px;
 	text-decoration: none;
 	font-size: 22px;
-	color: #648880;
+	color: var(--palette-2);
 }
 
 /* ----
  * Head
  * ---- */
+ /*.index-header{
+	vertical-align: center;
+ }*/
+ header.container {
+	border-top: 4px solid var(--palette-3);
+	border-bottom: 4px solid var(--palette-3);
+	margin: 22px 0;
+	width: 100%;
+ }
 .header-body {
 	margin-bottom: 22px;
-	border: 1px solid #dfe2e5;
 	text-align: center;
 	font-family: monospace;
 	font-variant: small-caps;
 }
 .title {
 	font-size: 50px;
-	border-top: 4px solid #648880;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	padding: 40px 0 0 0;
 }
 .title a {
-	color: #648880;
+	color:  var(--palette-4);
 	text-decoration: none;
 }
+
+/* ----
+ * Foot
+ * ---- */
+ footer {
+	background-color: var(--palette-3);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: 8px solid var(--palette-2);
+ }
+ .credits {
+	float: right;
+ }
+ .nav-footer {
+	float: left;
+ }
