@@ -159,9 +159,13 @@ p {
 	font-size: 22px;
 	color: var(--palette-2);
 }
- a.selected {
+a.selected {
 	color: var(--palette-3);
 	font-weight: bold;
+}
+.nav-header span {
+	max-height:15px; 
+	display: inline-block;
 }
 
 /* ----
@@ -204,8 +208,8 @@ p {
  .credits {
 	float: right;
 	color: var(--palette-1);
-	line-height: 15px;
- }
+	line-height: 15px; 
+ } 
  .language {
 	float: left;
 	line-height: 15px;
