@@ -235,6 +235,12 @@ article {
 	float: left;
 	margin-bottom: 22px;
 }
+.pinned {
+	border-color: var(--palette-2);
+	border-width: 0 0 4px 0;
+	border-style: dotted;
+	padding: 0 0 44px 0;
+}
 article h1 {
 	margin-top: 5px;
 	font-size: 2.5em;
