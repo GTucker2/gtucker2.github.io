@@ -99,7 +99,7 @@ body {
 /* ----------
  * Typography
  * ---------- */
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, li, ul {
   font-family: monospace;
   margin-bottom: 22px;
   color: #802603; }
@@ -118,7 +118,25 @@ h2 {
   margin-bottom: 11px; }
 
 h2 a {
-  color: #e4861a; }
+  color: #e4861a;
+  text-decoration: none;
+}
+
+ul p {
+  margin-bottom: 11px;
+}
+
+li {
+  font-size: 1.2em;
+  color: #802603;
+  margin-bottom: 11px;
+  margin-left: 33px;
+}
+
+li a {
+  text-decoration: none;
+  color: #bd400f;
+}
 
 p a {
   color: #e4861a; }
@@ -222,10 +240,10 @@ article {
   border-color: #e4861a;
   border-width: 0 0 4px 0;
   border-style: dotted;
-  padding: 0 0 44px 0; }
+  padding: 0 0 22px 0; }
 
 article h1 {
-  margin-top: 5px;
+  margin-top: 22px;
   font-size: 2.5em;
   color: #bd400f;
   margin-bottom: 22px; }
@@ -237,6 +255,10 @@ article small {
 article small a {
   font-size: 1.5em;
   color: #e4861a; }
+
+article ul p {
+  margin-bottom: 11px;
+}
 
 article p {
   margin-top: 11px;
