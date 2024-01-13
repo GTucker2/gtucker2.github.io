@@ -1,1 +1,0 @@
-# gtucker2.github.io
