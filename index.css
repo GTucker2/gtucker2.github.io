@@ -6,3 +6,8 @@ body {
 div {
     margin-top: 15px;
 }
+
+h2 {
+    border: 2px solid powderblue;
+    margin: 50px;
+  }
