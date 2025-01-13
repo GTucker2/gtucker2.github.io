@@ -13,13 +13,13 @@ body {
 header, section {
     padding-left: 20%;
     padding-right: 20%;
-    min-width: 500px;
+    min-width: 700px;
 }
 
 header div, header h1, section div, section ul, section h1, section h2, section span{
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 700px;
 }
 
 section.blue {
@@ -60,6 +60,11 @@ h3 {
     font-size: 15px;
 }
 
+ul {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 div {
     margin-top: 15px;
 }
@@ -90,4 +95,9 @@ div.subheader p span.profession {
 div.subheader p span.employer {
     color: darkslategrey;
     font-weight: bold;
+}
+
+div.navigator {
+    background-color: lightsteelblue;
+    height: 20px;
 }
