@@ -13,6 +13,7 @@ body {
 header, section {
     padding-left: 20%;
     padding-right: 20%;
+    min-width: 500px;
 }
 
 header div, header h1, section div, section ul, section h1, section h2, section span{
